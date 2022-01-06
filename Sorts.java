@@ -9,7 +9,7 @@ public class Sorts {
       while (y > (x+1)) {
         //if value at index is less than value at index directly before
         if (data.get(y-1).compareTo(data.get(y-2)) < 0) {
-          //swap values
+          //swap values using a temporary variable to ensure that we don't set both indices are not set to the same value
           Comparable dummy = data.get(y-1);
           data.set(y-1, data.get(y-2));
           data.set(y-2, dummy);
