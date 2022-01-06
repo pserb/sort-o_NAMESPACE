@@ -36,8 +36,10 @@ public class Sorts {
     //maxPos will point to position of SELECTION (greatest value)
     int maxPos;
     int swapCtr = 0;
+    int passCtr = 0;
     // start at the rightmost end
     for(int pass = data.size()-1; pass > 0; pass--) {
+      passCtr++;
       Comparable hi = data.get(0);
     //   System.out.println( "\nbegin pass " + (data.size()-pass) );//diag
 
@@ -63,7 +65,9 @@ public class Sorts {
   public static void insertion( ArrayList<Comparable> data )
   {
     int swapCtr = 0;
+    int passCtr = 0;
     for(int partition = 1; partition < data.size(); partition++) {
+      passCtr++;
       //partition marks first item in unsorted region
 
     //   System.out.println( "\npartition: " + partition + "\tdataset:"); //diag
