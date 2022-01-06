@@ -5,6 +5,7 @@ public class Sorts {
   {
     int swapCtr = 0;
     int passCtr = 0;
+    int compareCtr = 0;
     //tracks start index of "confirmed" set (aka # of passes)
     for(int x = 0; x < data.size()-1; x ++) {
       passCtr++;
@@ -12,6 +13,7 @@ public class Sorts {
       int y = data.size();
       //iterates through the array until it reaches the "confirmed" numbers
       while (y > (x+1)) {
+        compareCtr++;
         //if value at index is less than value at index directly before
         if (data.get(y-1).compareTo(data.get(y-2)) < 0) {
           //swap values
@@ -27,6 +29,7 @@ public class Sorts {
     }
     System.out.println("Number of Swaps: " + swapCtr);
     System.out.println("Number of Passes: " + passCtr);
+    System.out.println("Number of Comparisons: " + compareCtr);
   }
 
   public static void selection( ArrayList<Comparable> data )
@@ -60,6 +63,7 @@ public class Sorts {
     //   System.out.println( "after swap: " +  data );//diag
     }
     System.out.println("Number of Swaps: " + swapCtr);
+    System.out.println("Number of Passes: " + passCtr);
   }//end selectionSort
 
   public static void insertion( ArrayList<Comparable> data )
@@ -91,6 +95,7 @@ public class Sorts {
       }
     }
     System.out.println("Number of Swaps: " + swapCtr);
+    System.out.println("Number of Passes: " + passCtr);
   }//end insertionSortV
 
 }
