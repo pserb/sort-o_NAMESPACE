@@ -8,6 +8,7 @@
 == Class Driver ==
 * code to illustrate:
 * best & worst case for - bubble, insertion, selection sort
+* keep track of: passes, comparisons, swaps
 *********************/
 
 import java.util.ArrayList;
@@ -20,7 +21,9 @@ public class Driver {
         bubbleman.add(5);
         bubbleman.add(12);
         bubbleman.add(3);
+        System.out.println("Bubble before: " + bubbleman);
         Sorts.bubble(bubbleman);
+        System.out.println("Bubble after: " + bubbleman);
 
         ArrayList insertionman = new ArrayList<Integer>();
         insertionman.add(7);
@@ -28,7 +31,9 @@ public class Driver {
         insertionman.add(5);
         insertionman.add(12);
         insertionman.add(3);
+        System.out.println("\nInsertion before: " + insertionman);
         Sorts.insertion(insertionman);
+        System.out.println("Insertion after: " + insertionman);
 
         ArrayList selectionman = new ArrayList<Integer>();
         selectionman.add(7);
@@ -36,6 +41,8 @@ public class Driver {
         selectionman.add(5);
         selectionman.add(12);
         selectionman.add(3);
+        System.out.println("\nSelection before: " + selectionman);
         Sorts.selection(selectionman);
+        System.out.println("Selection after: " + selectionman);
     }
 }
