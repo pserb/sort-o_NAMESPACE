@@ -3,6 +3,7 @@ import java.util.ArrayList;
 public class Sorts {
   public static void bubble( ArrayList<Comparable> data )
   {
+    int swapCtr = 0;
     //tracks start index of "confirmed" set (aka # of passes)
     for(int x = 0; x < data.size()-1; x ++) {
       //variable that declares ArrayList length
@@ -15,11 +16,14 @@ public class Sorts {
           Comparable dummy = data.get(y-1);
           data.set(y-1, data.get(y-2));
           data.set(y-2, dummy);
+          swapCtr++;
         }
         //decrement bubble by an index
         y--;
+
       }
     }
+    System.out.println("Number of Swaps: " + swapCtr);
   }
 
   public static void selection( ArrayList<Comparable> data )
@@ -28,6 +32,7 @@ public class Sorts {
 
     //maxPos will point to position of SELECTION (greatest value)
     int maxPos;
+    int swapCtr = 0;
     // start at the rightmost end
     for(int pass = data.size()-1; pass > 0; pass--) {
       Comparable hi = data.get(0);
@@ -45,13 +50,16 @@ public class Sorts {
       Comparable p1 = data.get(pass);
       data.set(pass, hi);
       data.set(data.indexOf(hi), p1);
+      swapCtr++;
 
     //   System.out.println( "after swap: " +  data );//diag
     }
+    System.out.println("Number of Swaps: " + swapCtr);
   }//end selectionSort
 
   public static void insertion( ArrayList<Comparable> data )
   {
+    int swapCtr = 0;
     for(int partition = 1; partition < data.size(); partition++) {
       //partition marks first item in unsorted region
 
@@ -69,11 +77,13 @@ public class Sorts {
           Comparable dummy = data.get(i);
           data.set(i,data.get(i-1));
           data.set(i-1,dummy);
+          swapCtr++;
         }
         else
           break;
       }
     }
+    System.out.println("Number of Swaps: " + swapCtr);
   }//end insertionSortV
 
 }
