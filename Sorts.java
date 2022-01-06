@@ -4,8 +4,10 @@ public class Sorts {
   public static void bubble( ArrayList<Comparable> data )
   {
     int swapCtr = 0;
+    int passCtr = 0;
     //tracks start index of "confirmed" set (aka # of passes)
     for(int x = 0; x < data.size()-1; x ++) {
+      passCtr++;
       //variable that declares ArrayList length
       int y = data.size();
       //iterates through the array until it reaches the "confirmed" numbers
@@ -24,6 +26,7 @@ public class Sorts {
       }
     }
     System.out.println("Number of Swaps: " + swapCtr);
+    System.out.println("Number of Passes: " + passCtr);
   }
 
   public static void selection( ArrayList<Comparable> data )
