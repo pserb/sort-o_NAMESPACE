@@ -1,2 +1,2 @@
 # sort-o_NAMESPACE
-Repo for sorting lab for NAMESPACE
+Paul Serbanescu, Max Schneider, Orion Roven
