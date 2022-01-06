@@ -1,2 +1,14 @@
 # sort-o_NAMESPACE
-Paul Serbanescu, Max Schneider, Orion Roven
+Roster: Paul Serbanescu, Max Schneider, Orion Roven
+
+## Bubble sort
+Best case: ArrayList is already sorted
+Worst case:
+
+## Insertion sort
+Best case: ArrayList is already sorted
+Worst case
+
+## Selection sort
+Best case: ArrayList is already sorted
+Worst case:
