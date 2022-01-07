@@ -17,6 +17,12 @@ public class Driver {
     public static void main(String[] args) {
         System.out.println("testing bubble sort:\n");
 
+        ArrayList small = new ArrayList<Integer>();
+        small.add(1);
+        System.out.println("Bubble before: " + small);
+        Sorts.bubble(small);
+        System.out.println("Bubble after: " + small + "\n");
+
         ArrayList bubbleman = new ArrayList<Integer>();
         bubbleman.add(7);
         bubbleman.add(1);
