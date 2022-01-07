@@ -26,7 +26,7 @@ public class trial {
   }
 
   public static void main(String[] args) {
-    int sizer = 1000;
+    int sizer = 10;
     ArrayList[] tester = new ArrayList[sizer];
 
     for(int x = 0; x < sizer; x+=1) {
@@ -43,6 +43,20 @@ public class trial {
     supertester[1]=tester;
     supertester[2]=tester;
     toString(supertester);
+    int counter = 0;
+    for(int x = 0; x < 3; x ++) {
+      for(int upper = 0; upper<sizer; upper++) {
+        ArrayList a = supertester[x][upper];
+        counter++;
+        System.out.println("Data number: " + counter);
+        System.out.println(SortsAlt.bubble(a,x));
+
+        System.out.println("\n" + SortsAlt.selection(a,x));
+
+        System.out.println("\n" + SortsAlt.insertion(a,x));
+
+      }
+    }
   }
 
 }
