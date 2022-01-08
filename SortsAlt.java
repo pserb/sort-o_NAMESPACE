@@ -1,7 +1,7 @@
 import java.util.ArrayList;
 
 public class SortsAlt {
-  public static int bubble( ArrayList<Comparable> data , int searcher)
+  public static int[] bubble( ArrayList<Comparable> data )
   {
     int swapCtr = 0;
     int passCtr = 0;
@@ -27,16 +27,14 @@ public class SortsAlt {
 
       }
     }
-    if(searcher == 0) {
-      return swapCtr;
-    }else if (searcher == 1) {
-      return passCtr;
-    }else {
-      return compareCtr;
-    }
+    int[] result = new int[3];
+    result[0] = swapCtr;
+    result[1] = passCtr;
+    result[2] = compareCtr;
+    return result;
   }
 
-  public static int selection( ArrayList<Comparable> data , int searcher)
+  public static int[] selection( ArrayList<Comparable> data )
   {
     //note: this version places greatest value at "rightmost" end
 
@@ -68,16 +66,14 @@ public class SortsAlt {
 
     //   System.out.println( "after swap: " +  data );//diag
     }
-    if(searcher == 0) {
-      return swapCtr;
-    }else if (searcher == 1) {
-      return passCtr;
-    }else {
-      return compareCtr;
-    }
+    int[] result = new int[3];
+    result[0] = swapCtr;
+    result[1] = passCtr;
+    result[2] = compareCtr;
+    return result;
   }//end selectionSort
 
-  public static int insertion( ArrayList<Comparable> data , int searcher)
+  public static int[] insertion( ArrayList<Comparable> data )
   {
     int swapCtr = 0;
     int passCtr = 0;
@@ -107,13 +103,11 @@ public class SortsAlt {
           break;
       }
     }
-    if(searcher == 0) {
-      return swapCtr;
-    }else if (searcher == 1) {
-      return passCtr;
-    }else {
-      return compareCtr;
-    }
+    int[] result = new int[3];
+    result[0] = swapCtr;
+    result[1] = passCtr;
+    result[2] = compareCtr;
+    return result;
   }//end insertionSortV
 
 }

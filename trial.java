@@ -12,6 +12,12 @@ public class trial {
     System.out.println("}");
   }
 
+  public static void toString(int[] input) {
+    System.out.println("Swaps: " +input[0]);
+    System.out.println("Passes: " +input[1]);
+    System.out.println("Comparisons: " +input[2]);
+  }
+
   public static ArrayList createRando (ArrayList a) {
     int top = a.size();
     ArrayList result;
@@ -47,13 +53,14 @@ public class trial {
     for(int x = 0; x < 3; x ++) {
       for(int upper = 0; upper<sizer; upper++) {
         ArrayList a = supertester[x][upper];
-        counter++;
-        System.out.println("Data number: " + counter);
-        System.out.println(SortsAlt.bubble(a,x));
-
-        System.out.println("\n" + SortsAlt.selection(a,x));
-
-        System.out.println("\n" + SortsAlt.insertion(a,x));
+        System.out.println("Data set " + (x + 1) + ", Trial " + (upper + 1));
+        if (x == 0) {
+          toString(SortsAlt.bubble(a));
+        } else if (x == 1) {
+          toString(SortsAlt.selection(a));
+        } else {
+          toString(SortsAlt.insertion(a));
+        }
 
       }
     }
