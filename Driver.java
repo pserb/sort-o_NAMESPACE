@@ -17,8 +17,15 @@ public class Driver {
     public static void main(String[] args) {
         System.out.println("testing bubble sort:\n");
 
+        ArrayList smaller = new ArrayList<Integer>();
+        smaller.add(1);
+        System.out.println("Bubble before: " + smaller);
+        Sorts.bubble(smaller);
+        System.out.println("Bubble after: " + smaller + "\n");
+
         ArrayList small = new ArrayList<Integer>();
         small.add(1);
+        small.add(2);
         System.out.println("Bubble before: " + small);
         Sorts.bubble(small);
         System.out.println("Bubble after: " + small + "\n");
@@ -54,6 +61,20 @@ public class Driver {
         System.out.println("Bubble after: " + descending + "\n");
 
         System.out.println("testing insertion sort:");
+
+        ArrayList littler = new ArrayList<Integer>();
+        littler.add(1);
+        System.out.println("\nInsertion before: " + littler);
+        Sorts.insertion(littler);
+        System.out.println("Insertion after: " + littler + "\n");
+
+        ArrayList little = new ArrayList<Integer>();
+        little.add(1);
+        little.add(2);
+        System.out.println("\nInsertion before: " + little);
+        Sorts.insertion(little);
+        System.out.println("Insertion after: " + little + "\n");
+
         ArrayList insertionman = new ArrayList<Integer>();
         insertionman.add(7);
         insertionman.add(1);
@@ -64,7 +85,28 @@ public class Driver {
         Sorts.insertion(insertionman);
         System.out.println("Insertion after: " + insertionman + "\n");
 
+        ArrayList up = new ArrayList<Integer>();
+        up.add(1);
+        up.add(3);
+        up.add(5);
+        up.add(7);
+        up.add(12);
+        System.out.println("\nInsertion before: " + up);
+        Sorts.insertion(up);
+        System.out.println("Insertion after: " + up + "\n");
+
+        ArrayList down = new ArrayList<Integer>();
+        down.add(12);
+        down.add(7);
+        down.add(5);
+        down.add(3);
+        down.add(1);
+        System.out.println("\nInsertion before: " + down);
+        Sorts.insertion(down);
+        System.out.println("Insertion after: " + down + "\n");
+
         System.out.println("testing selection sort:");
+
         ArrayList selectionman = new ArrayList<Integer>();
         selectionman.add(7);
         selectionman.add(1);
