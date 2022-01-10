@@ -107,6 +107,32 @@ public class Driver {
 
         System.out.println("testing selection sort:");
 
+        ArrayList bob = new ArrayList<Integer>();
+        bob.add(1);
+        System.out.println("\nSelection before: " + bob);
+        Sorts.selection(bob);
+        System.out.println("Selection after: " + bob);
+
+        ArrayList goingup = new ArrayList<Integer>();
+        goingup.add(1);
+        goingup.add(3);
+        goingup.add(4);
+        goingup.add(7);
+        goingup.add(13);
+        System.out.println("\nSelection before: " + goingup);
+        Sorts.selection(goingup);
+        System.out.println("Selection after: " + goingup);
+
+        ArrayList goingdown = new ArrayList<Integer>();
+        goingdown.add(13);
+        goingdown.add(7);
+        goingdown.add(4);
+        goingdown.add(3);
+        goingdown.add(1);
+        System.out.println("\nSelection before: " + goingdown);
+        Sorts.selection(goingdown);
+        System.out.println("Selection after: " + goingdown);
+
         ArrayList selectionman = new ArrayList<Integer>();
         selectionman.add(7);
         selectionman.add(1);
