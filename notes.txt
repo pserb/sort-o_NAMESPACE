@@ -1,0 +1,31 @@
+
+
+BUB-QA:
+* q0: If a pass requires no swaps, what do you know?
+* a0: That the list is sorted
+* q1: After pass p, what do you know?
+* a1: We know that the first p elements are sorted and in the right place
+* q2: How many passes are necessary to completely sort?
+* a2: The length of the array - 1 for the worst case (elements were in descending order)
+
+SEL-QA:
+* q0: How many passes to sort n elements?
+* a0: n-1 passes
+* q1: What do you know after pass p?
+* a1: that the last p elements are sorted
+* q2: How do you know if sorted?
+* a2: if we finished pass n-1 where n is the number of elements
+* q3: What does a pass boil down to?
+* a3: finding the greatest number and putting it in the rightmost position that increments left by 1 each pass
+
+INS-QA:
+* q0: How many passes to sort n elements?
+* a0: n
+* q1: What do you know after pass p?
+* a1: the first p elements are sorted, but not necessarily in the final spot
+* q2: How will you know when sorted?
+* a2: You have made n passes
+* q3: What constitues a pass?
+* a3: A new element is correctly sorted in the sorted range
+* q4: What must you track?
+* a4: The unsorted and sorted ranges
