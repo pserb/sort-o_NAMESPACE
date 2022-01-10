@@ -23,4 +23,4 @@ Worst case: Because the number of passes will always be length - 1, and making a
 
 Best case: ArrayList is already sorted. Time complexity is O(n).
 
-Worst case: For an ArrayList in descending order [13, 7, 4, 3, 1], selection sort takes 2 swaps. However, for [5, 4, 1, 3, 2] selection sort takes 4 swaps. Time complexity of O(n<sup>2</sup>).
+Worst case: For an ArrayList in descending order [13, 7, 4, 3, 1], selection sort takes 2 swaps because is swaps 1 and 13, then 3 and 7. However, for [5, 4, 1, 3, 2] selection sort takes 4 swaps. This is mathematically the highest number of swaps for this length because each swap puts  a number in the right place, and by process of elimination the last one is automatically in the right spot af6ter the rest have been sorted. Time complexity of O(n<sup>2</sup>).
