@@ -8,7 +8,7 @@ public class Sorts {
     int compareCtr = 0;
     boolean swapped;
     //tracks start index of "confirmed" set (aka # of passes)
-    for(int x = 0; x < data.size(); x ++) {
+    for(int x = 0; x < data.size()-1; x ++) {
       passCtr++;
       swapped = false;
       //variable that declares ArrayList length
