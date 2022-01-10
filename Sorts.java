@@ -34,9 +34,13 @@ public class Sorts {
         break;
       }
     }
-    System.out.println("Number of Swaps: " + swapCtr);
-    System.out.println("Number of Passes: " + passCtr);
-    System.out.println("Number of Comparisons: " + compareCtr);
+    // System.out.println("Number of Swaps: " + swapCtr);
+    // System.out.println("Number of Passes: " + passCtr);
+    // System.out.println("Number of Comparisons: " + compareCtr);
+    System.out.println("Time complexity: " + (swapCtr + compareCtr + passCtr) + " of length " + data.size() + " array (n)");
+    System.out.println("Number of swaps: " + swapCtr);
+    System.out.println("Number of compares: " + compareCtr);
+    System.out.println("Number of passes: " + passCtr);
   }
 
   public static void selection( ArrayList<Comparable> data )
@@ -72,9 +76,13 @@ public class Sorts {
 
     //   System.out.println( "after swap: " +  data );//diag
     }
-    System.out.println("Number of Swaps: " + swapCtr);
-    System.out.println("Number of Passes: " + passCtr);
-    System.out.println("Number of Comparisons: " + compareCtr);
+    // System.out.println("Number of Swaps: " + swapCtr);
+    // System.out.println("Number of Passes: " + passCtr);
+    // System.out.println("Number of Comparisons: " + compareCtr);
+    System.out.println("Time complexity: " + (swapCtr + compareCtr + passCtr) + " of length " + data.size() + " array (n)");
+    System.out.println("Number of swaps: " + swapCtr);
+    System.out.println("Number of compares: " + compareCtr);
+    System.out.println("Number of passes: " + passCtr);
   }//end selectionSort
 
   public static void insertion( ArrayList<Comparable> data )
@@ -86,7 +94,7 @@ public class Sorts {
       passCtr++;
       //partition marks first item in unsorted region
 
-    //   System.out.println( "\npartition: " + partition + "\tdataset:"); //diag
+      // System.out.println( "\npartition: " + partition + "\tdataset:"); //diag
     //   System.out.println( data );
 
       //traverse sorted region from right to left
@@ -107,9 +115,13 @@ public class Sorts {
           break;
       }
     }
-    System.out.println("Number of Swaps: " + swapCtr);
-    System.out.println("Number of Passes: " + passCtr);
-    System.out.println("Number of Comparisons: " + compareCtr);
+    // System.out.println("Number of Swaps: " + swapCtr);
+    // System.out.println("Number of Passes: " + passCtr);
+    // System.out.println("Number of Comparisons: " + compareCtr);
+    System.out.println("Time complexity: " + (swapCtr + compareCtr + passCtr) + " of length " + data.size() + " array (n)");
+    System.out.println("Number of swaps: " + swapCtr);
+    System.out.println("Number of compares: " + compareCtr);
+    System.out.println("Number of passes: " + passCtr);
   }//end insertionSortV
 
 }
