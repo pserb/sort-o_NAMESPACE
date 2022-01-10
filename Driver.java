@@ -134,11 +134,11 @@ public class Driver {
         System.out.println("Selection after: " + goingdown);
 
         ArrayList selectionman = new ArrayList<Integer>();
-        selectionman.add(7);
-        selectionman.add(1);
         selectionman.add(5);
-        selectionman.add(12);
+        selectionman.add(4);
+        selectionman.add(1);
         selectionman.add(3);
+        selectionman.add(2);
         System.out.println("\nSelection before: " + selectionman);
         Sorts.selection(selectionman);
         System.out.println("Selection after: " + selectionman);

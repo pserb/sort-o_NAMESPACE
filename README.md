@@ -23,4 +23,4 @@ Worst case: Because the number of passes will always be length - 1, and making a
 
 Best case: ArrayList is already sorted. Time complexity is O(n).
 
-Worst case: ArrayList is in descending order eg: [13, 6, 4, 2, 1]. Time complexity of O(n<sup>2</sup>).
+Worst case: For an ArrayList in descending order [13, 7, 4, 3, 1], selection sort takes 2 swaps. However, for [5, 4, 1, 3, 2] selection sort takes 4 swaps. Time complexity of O(n<sup>2</sup>).

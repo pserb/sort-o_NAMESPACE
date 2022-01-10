@@ -63,11 +63,12 @@ public class Sorts {
           hi = data.get(maxPos);
         }
       }
-
+      if(hi != data.get(pass)) {
       Comparable p1 = data.get(pass);
       data.set(pass, hi);
       data.set(data.indexOf(hi), p1);
       swapCtr++;
+    }
 
     //   System.out.println( "after swap: " +  data );//diag
     }
