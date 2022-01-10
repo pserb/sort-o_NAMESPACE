@@ -6,9 +6,11 @@ public class Sorts {
     int swapCtr = 0;
     int passCtr = 0;
     int compareCtr = 0;
+    boolean swapped;
     //tracks start index of "confirmed" set (aka # of passes)
-    for(int x = 0; x < data.size()-1; x ++) {
+    for(int x = 0; x < data.size(); x ++) {
       passCtr++;
+      swapped = false;
       //variable that declares ArrayList length
       int y = data.size();
       //iterates through the array until it reaches the "confirmed" numbers
@@ -21,10 +23,15 @@ public class Sorts {
           data.set(y-1, data.get(y-2));
           data.set(y-2, dummy);
           swapCtr++;
+          swapped = true;
         }
         //decrement bubble by an index
         y--;
 
+      }
+      // if two elements were not swapped during this pass, we know the array is sorted
+      if (swapped == false) {
+        break;
       }
     }
     System.out.println("Number of Swaps: " + swapCtr);
